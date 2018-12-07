@@ -100,9 +100,11 @@ $(document).ready(function() {
 			timer -= difficulty;
 		} else {
 			timer = 1000;
-			if (difficulty > 75) {
-				difficulty = 25;
-			}
+			difficulty = 0;
+			clickableWidth = 100;
+			clickableHeight = 100;
+			createClickable();
+			createClickableNext();
 			lives--;
 		}
 
